@@ -4,7 +4,7 @@ module.exports = [{
   entry: './app.scss',
   output: {
     path: path.resolve(__dirname, "dist"), // string
-
+    publicPath: "dist/",
     // This is necessary for webpack to compile
     // But we never use style-bundle.js
     filename: 'style-bundle.js',
