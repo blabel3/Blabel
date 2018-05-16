@@ -15,7 +15,11 @@ $mdc-theme-on-secondary: #000000;
   //@extend .mdc-theme--primary-bg;
 }
 
-.project-content {
+.self-card {
+  margin: 16px 16px 16px 16px;
+}
+
+.project-description {
   margin: 8px 8px 8px 8px;
 }
 
