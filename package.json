@@ -19,7 +19,8 @@
     "webpack-dev-server": "2"
   },
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "dependencies": {
     "@material/button": "^0.35.0",
