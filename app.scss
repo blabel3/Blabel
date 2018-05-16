@@ -1,7 +1,24 @@
+$mdc-theme-primary: #26a69a;
+$mdc-theme-secondary: #64dd17;
+$mdc-theme-on-primary: #000000;
+$mdc-theme-on-secondary: #000000;
+
+@import "@material/theme/mdc-theme";
 @import "@material/button/mdc-button";
 @import "@material/card/mdc-card";
+@import "@material/layout-grid/mdc-layout-grid";
 
-.foo-button {
-  @include mdc-button-ink-color(teal);
-  @include mdc-states(teal);
+.pop-button {
+  @extend .mdc-button;
+
+  @extend .mdc-theme--on-primary;
+  //@extend .mdc-theme--primary-bg;
+}
+
+.project-content {
+  margin: 8px 8px 8px 8px;
+}
+
+.dotfiles-card__media {
+  background-image: url("https://raw.githubusercontent.com/blabel3/dotfiles/master/wallpaper.jpg");
 }
