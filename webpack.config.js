@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = [{
-  entry: './app.scss',
+  entry: './public/app.scss',
   output: {
-    path: path.resolve(__dirname, "dist"), // string
-    publicPath: "dist/",
+    path: path.resolve(__dirname, "public/dist"), // string
+    publicPath: "public/dist/",
     // This is necessary for webpack to compile
     // But we never use style-bundle.js
     filename: 'style-bundle.js',
@@ -33,9 +33,9 @@ module.exports = [{
 }];
 
 module.exports.push({
-  entry: "./app.js",
+  entry: "./public/app.js",
   output: {
-    path: path.resolve(__dirname, "dist"), // string
+    path: path.resolve(__dirname, "public/dist"), // string
     filename: "bundle.js"
   },
   module: {
