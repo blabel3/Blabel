@@ -16,5 +16,22 @@ $mdc-theme-on-secondary: #000000;
   //@extend .mdc-theme--primary-bg;
 }
 
+.self-card {
+  margin: 32px 32px 32px 32px;
+}
+
+.project-description {
+  margin: 8px 8px 8px 8px;
+}
+
+.dotfiles-card__media {
+  background-image: url("https://raw.githubusercontent.com/blabel3/dotfiles/master/wallpaper.jpg");
+}
+
+.headshot{
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
 
 

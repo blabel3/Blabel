@@ -1,4 +1,4 @@
-:root {
+@import url(https://fonts.googleapis.com/css?family=Quicksand:700|Work+Sans:700);:root {
   --mdc-theme-primary: #26a69a;
   --mdc-theme-secondary: #64dd17;
   --mdc-theme-background: #fff;
@@ -1127,3 +1127,8 @@
 
 .dotfiles-card__media {
   background-image: url("https://raw.githubusercontent.com/blabel3/dotfiles/master/wallpaper.jpg"); }
+
+.headshot {
+  border-radius: 50%;
+  display: block;
+  margin: auto; }
