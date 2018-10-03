@@ -7,7 +7,7 @@ $mdc-theme-on-secondary: #000000;
 @import "@material/button/mdc-button";
 @import "@material/card/mdc-card";
 @import "@material/layout-grid/mdc-layout-grid";
-@import url('https://fonts.googleapis.com/css?family=Quicksand:700|Work+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700|Roboto+Slab');
 
 .pop-button {
   @extend .mdc-button;
@@ -25,13 +25,22 @@ $mdc-theme-on-secondary: #000000;
 }
 
 .dotfiles-card__media {
-  background-image: url("https://raw.githubusercontent.com/blabel3/dotfiles/master/wallpaper.jpg");
+  background-image: url("https://gitlab.com/blabel3/dotfiles/raw/laptop/screenshot.png");
 }
 
 .headshot{
   border-radius: 50%;
   display: block;
   margin: auto;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: $mdc-theme-primary;
+}
+
+h1{
+  font-family: 'Quicksand', sans-serif;
 }
 
 

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:700|Work+Sans:700);:root {
+@import url(https://fonts.googleapis.com/css?family=Quicksand:700|Roboto+Slab);:root {
   --mdc-theme-primary: #26a69a;
   --mdc-theme-secondary: #64dd17;
   --mdc-theme-background: #fff;
@@ -1126,9 +1126,16 @@
   margin: 8px 8px 8px 8px; }
 
 .dotfiles-card__media {
-  background-image: url("https://raw.githubusercontent.com/blabel3/dotfiles/master/wallpaper.jpg"); }
+  background-image: url("https://gitlab.com/blabel3/dotfiles/raw/laptop/screenshot.png"); }
 
 .headshot {
   border-radius: 50%;
   display: block;
   margin: auto; }
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #26a69a; }
+
+h1 {
+  font-family: 'Quicksand', sans-serif; }
