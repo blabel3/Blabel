@@ -526,7 +526,7 @@ exports.getNormalizedEventCoords = getNormalizedEventCoords;
 
 var _ripple = __webpack_require__(4);
 
-var ripple = new _ripple.MDCRipple(document.querySelector('.pop-button'));
+var ripple = new _ripple.MDCRipple(document.querySelector('.source-button'));
 
 /***/ }),
 /* 4 */

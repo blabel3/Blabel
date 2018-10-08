@@ -16,11 +16,13 @@ $mdc-theme-on-secondary: #000000;
 
 //Card stuff
 
-.pop-button {
+.source-button {
   @extend .mdc-button;
 
-  @extend .mdc-theme--on-primary;
-  //@extend .mdc-theme--primary-bg;
+  @extend .mdc-theme--primary;
+
+  @extend .mdc-card__action;
+  @extend .mdc-card__action--button;
 }
 
 .self-card {
@@ -34,6 +36,17 @@ $mdc-theme-on-secondary: #000000;
 .dotfiles-card__media {
   background-image: url("https://raw.githubusercontent.com/blabel3/dotfiles/master/wallpaper.jpg");
 }
+
+.capshare-card__media {
+  background-image: url("https://i.imgur.com/6S14LTe.png");
+}
+
+.mixtape-card__media {
+  background-image: url("https://i.imgur.com/CVDwqBU.png");
+  height:100%;
+}
+
+//Other stuff
 
 .headshot{
   border-radius: 50%;
