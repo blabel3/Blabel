@@ -9,6 +9,13 @@ $mdc-theme-on-secondary: #000000;
 @import "@material/layout-grid/mdc-layout-grid";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:700|Roboto+Slab');
 
+//Grid Stuff
+.master-grid{
+  @include mdc-layout-grid(desktop, 8dp, 1200px);
+}
+
+//Card stuff
+
 .pop-button {
   @extend .mdc-button;
 
@@ -25,7 +32,7 @@ $mdc-theme-on-secondary: #000000;
 }
 
 .dotfiles-card__media {
-  background-image: url("https://gitlab.com/blabel3/dotfiles/raw/laptop/screenshot.png");
+  background-image: url("https://raw.githubusercontent.com/blabel3/dotfiles/master/wallpaper.jpg");
 }
 
 .headshot{
@@ -34,6 +41,8 @@ $mdc-theme-on-secondary: #000000;
   margin: auto;
 }
 
+//Text
+
 body {
   font-family: 'Roboto Slab', serif;
   background-color: $mdc-theme-primary;
@@ -41,6 +50,10 @@ body {
 
 h1{
   font-family: 'Quicksand', sans-serif;
+  text-align: center;
 }
 
+h2{
+  color: $mdc-theme-primary
+}
 

@@ -1119,6 +1119,13 @@
   margin-right: 0;
   margin-left: auto; }
 
+.master-grid {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8dp;
+  padding: var(--mdc-layout-grid-margin-desktop, 8dp);
+  max-width: 1200px; }
+
 .self-card {
   margin: 32px 32px 32px 32px; }
 
@@ -1126,7 +1133,7 @@
   margin: 8px 8px 8px 8px; }
 
 .dotfiles-card__media {
-  background-image: url("https://gitlab.com/blabel3/dotfiles/raw/laptop/screenshot.png"); }
+  background-image: url("https://raw.githubusercontent.com/blabel3/dotfiles/master/wallpaper.jpg"); }
 
 .headshot {
   border-radius: 50%;
@@ -1138,4 +1145,8 @@ body {
   background-color: #26a69a; }
 
 h1 {
-  font-family: 'Quicksand', sans-serif; }
+  font-family: 'Quicksand', sans-serif;
+  text-align: center; }
+
+h2 {
+  color: #26a69a; }
