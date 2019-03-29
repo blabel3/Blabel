@@ -33,6 +33,12 @@ $mdc-theme-on-secondary: #000000;
   margin: 8px 8px 8px 8px;
 }
 
+.project-image {
+  margin: 8px auto;
+  display: block;
+  align-items: center;
+}
+
 .dotfiles-card__media {
   background-image: url("https://raw.githubusercontent.com/blabel3/dotfiles/master/wallpaper.jpg");
 }
