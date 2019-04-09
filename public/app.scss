@@ -1,32 +1,16 @@
-$mdc-theme-primary: #26a69a;
-$mdc-theme-secondary: #64dd17;
-$mdc-theme-on-primary: #000000;
-$mdc-theme-on-secondary: #000000;
+$theme-primary: #26a69a;
+$theme-secondary: #64dd17;
 
-@import "@material/theme/mdc-theme";
-@import "@material/button/mdc-button";
-@import "@material/card/mdc-card";
-@import "@material/layout-grid/mdc-layout-grid";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:700|Roboto+Slab');
 
 //Grid Stuff
 .master-grid{
-  @include mdc-layout-grid(desktop, 8dp, 1200px);
-}
 
-//Card stuff
-
-.source-button {
-  @extend .mdc-button;
-
-  @extend .mdc-theme--primary;
-
-  @extend .mdc-card__action;
-  @extend .mdc-card__action--button;
 }
 
 .self-card {
   margin: 32px 32px 32px 32px;
+  background-color: white;
 }
 
 .project-description {
@@ -37,19 +21,7 @@ $mdc-theme-on-secondary: #000000;
   margin: 8px auto;
   display: block;
   align-items: center;
-}
-
-.dotfiles-card__media {
-  background-image: url("https://raw.githubusercontent.com/blabel3/dotfiles/master/wallpaper.jpg");
-}
-
-.capshare-card__media {
-  background-image: url("https://i.imgur.com/6S14LTe.png");
-}
-
-.mixtape-card__media {
-  background-image: url("https://i.imgur.com/CVDwqBU.png");
-  height:100%;
+  overflow: hidden;
 }
 
 //Other stuff
@@ -64,7 +36,7 @@ $mdc-theme-on-secondary: #000000;
 
 body {
   font-family: 'Roboto Slab', serif;
-  background-color: $mdc-theme-primary;
+  background-color: $theme-primary;
 }
 
 h1{
@@ -73,6 +45,6 @@ h1{
 }
 
 h2{
-  color: $mdc-theme-primary
+  color: $theme-primary
 }
 
