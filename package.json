@@ -21,12 +21,5 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack"
-  },
-  "dependencies": {
-    "@material/button": "^0.35.0",
-    "@material/card": "^0.35.0",
-    "@material/layout-grid": "^0.34.0",
-    "@material/ripple": "^0.35.0",
-    "@material/theme": "^0.35.0"
   }
 }
