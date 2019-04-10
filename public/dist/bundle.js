@@ -75,6 +75,7 @@ $(document).ready(function () {
         if (status == 0) {
             console.log('Error! :(');
         } else {
+            console.log('Made request!');
             addProjects(data);
         }
     }); /*
