@@ -9,6 +9,13 @@ $theme-secondary: #64dd17;
   max-width: 960px;
   display: block;
   margin: auto;
+  border-radius: 1rem;
+}
+
+.resume-button {
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 //Project grid
@@ -28,7 +35,7 @@ $theme-secondary: #64dd17;
 
 .project {
   border: 1px solid $theme-primary;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding: 8px 8px 8px 8px;
   flex: 1 0 250px;
   margin: 5px 5px;
@@ -47,9 +54,7 @@ $theme-secondary: #64dd17;
   display: block;
   align-items: center;
   overflow: hidden;
-}
-
-.source-button {
+  border-radius: 0.25rem;
 }
 
 //Other stuff
@@ -84,14 +89,17 @@ body {
   font-family: 'Roboto Slab', serif;
   background-color: $theme-primary;
   padding: 32px 16px 32px 16px;
+  font-size: 16px;
 }
 
 h1{
   font-family: 'Quicksand', sans-serif;
   text-align: center;
+  font-size: 200%;
 }
 
 h2{
   color: $theme-primary;
+  font-size: 150%;
 }
 
