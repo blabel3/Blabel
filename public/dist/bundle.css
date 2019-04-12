@@ -6,15 +6,23 @@
   margin: auto;
   border-radius: 16px; }
 
-.resume-button {
-  display: block;
-  margin: auto;
-  text-align: center; }
-
 .box-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+
+button {
+  font-family: 'Roboto Slab', serif;
+  background: transparent;
+  color: #26a69a;
+  border: 1px solid #26a69a;
+  border-radius: 4px;
+  text-transform: capitalize; }
+
+.resume-button {
+  display: block;
+  margin: auto;
+  text-align: center; }
 
 .project {
   border: 1px solid #26a69a;
@@ -24,7 +32,9 @@
   margin: 5px 5px; }
 
 .project-link {
-  color: white; }
+  display: block;
+  margin: auto;
+  text-align: center; }
 
 .project-description {
   margin: 8px 8px; }
@@ -39,12 +49,13 @@
 .headshot {
   border-radius: 50%;
   display: block;
-  margin: auto; }
+  margin: auto;
+  width: 33%; }
 
 .social {
   padding: 15px;
-  font-size: 30px;
-  width: 30px;
+  font-size: calc(1rem + 2vh);
+  width: calc(1rem + 2vh);
   text-align: center;
   text-decoration: none;
   margin: 0px 5px;

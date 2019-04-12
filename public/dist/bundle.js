@@ -101,7 +101,7 @@ function addProjects(projects) {
                 <p class=\"project-description\">" + projects[i].description + "</p>\
                 <div class=\"project-link\">\
                     <a href=\"" + projects[i].web_url + "\"><button class=\"source-button\">\
-                    see the code\
+                    <i class=\"fas fa-code\"></i> see the code\
                     </button></a>\
                 </div>\
             </div>");
