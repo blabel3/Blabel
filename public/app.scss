@@ -14,16 +14,25 @@ $curviness: 16px;
   border-radius: $curviness;
 }
 
-.resume-button {
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-
 .box-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+button {
+  font-family: 'Roboto Slab', serif;
+  background: transparent;
+  color: $theme-primary;
+  border: 1px solid $theme-primary;
+  border-radius: $curviness / 4;
+  text-transform: capitalize;
+}
+
+.resume-button {
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 //Project Boxes
@@ -37,7 +46,9 @@ $curviness: 16px;
 }
 
 .project-link {
-  color: white;
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 .project-description {
@@ -58,14 +69,15 @@ $curviness: 16px;
   border-radius: 50%;
   display: block;
   margin: auto;
+  width: 33%
 }
 
 //Socials
 
 .social {
   padding: 15px;
-  font-size: 30px;
-  width: 30px;
+  font-size: calc(1rem + 2vh);
+  width: calc(1rem + 2vh);
   text-align: center;
   text-decoration: none;
   margin: 0px 5px;
