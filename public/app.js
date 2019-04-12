@@ -24,8 +24,7 @@
      //console.log(projects)
      for (var i = 0; i < projects.length; i++){
          console.log(projects[i]) 
-        $("#project-grid").append("\
-        <div class=\"span-4\">\
+        $("#project-box").append("\
             <div class=\"project\">\
                 <img class=\"project-image\"src=\"" + projects[i].avatar_url + "\" alt=\"Project Image\"  width=\"100dp\"> \
                 <div class=\"project-description\">" + projects[i].description + "</div>\
@@ -34,7 +33,6 @@
                     see the code\
                     </button></a>\
                 </div>\
-            </div>\
-        </div>") 
+            </div>") 
     }
  }
