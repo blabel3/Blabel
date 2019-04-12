@@ -27,6 +27,7 @@
         $("#project-box").append("\
             <div class=\"project\">\
                 <img class=\"project-image\"src=\"" + projects[i].avatar_url + "\" alt=\"Project Image\"  width=\"100dp\"> \
+                <h3 class=\"project-name\">" + projects[i].name + "</h3>\
                 <p class=\"project-description\">" + projects[i].description + "</p>\
                 <div class=\"project-link\">\
                     <a href=\"" + projects[i].web_url + "\"><button class=\"source-button\">\
