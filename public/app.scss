@@ -1,15 +1,17 @@
 $theme-primary: #26a69a;
 $theme-secondary: #64dd17;
 
+$curviness: 16px;
+
 @import url('https://fonts.googleapis.com/css?family=Quicksand:700|Roboto+Slab');
 
 .self-card {
-  padding: 16px 16px 16px 16px;
+  padding: 1rem;
   background-color: white;
   max-width: 960px;
   display: block;
   margin: auto;
-  border-radius: 1rem;
+  border-radius: $curviness;
 }
 
 .resume-button {
@@ -18,26 +20,19 @@ $theme-secondary: #64dd17;
   text-align: center;
 }
 
-//Project grid
-
 .box-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#project-box {
-  flex-wrap: wrap;
-  //grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-  //grid-auto-rows: 1fr;
-  //grid-gap: 12px 12px;
-}
+//Project Boxes
 
 .project {
   border: 1px solid $theme-primary;
-  border-radius: 0.5rem;
+  border-radius: $curviness / 2;
   padding: 8px 8px 8px 8px;
-  flex: 1 0 250px;
+  flex: 1 0 275px;
   margin: 5px 5px;
 }
 
@@ -54,7 +49,7 @@ $theme-secondary: #64dd17;
   display: block;
   align-items: center;
   overflow: hidden;
-  border-radius: 0.25rem;
+  border-radius: $curviness / 4;
 }
 
 //Other stuff
@@ -85,21 +80,26 @@ $theme-secondary: #64dd17;
 
 //Text
 
-body {
+html {
   font-family: 'Roboto Slab', serif;
   background-color: $theme-primary;
-  padding: 32px 16px 32px 16px;
+  padding: 2rem 1rem;
   font-size: 16px;
 }
 
 h1{
   font-family: 'Quicksand', sans-serif;
   text-align: center;
-  font-size: 200%;
+  font-size: calc(1rem + 5vh);
+  margin-bottom: 2rem;
 }
 
 h2{
   color: $theme-primary;
-  font-size: 150%;
+  font-size: calc(1rem + 2.5vh);
+}
+
+p, a, button {
+  font-size: calc(1rem + 0.5vh);
 }
 
