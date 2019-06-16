@@ -2,7 +2,7 @@
 
 end_epoch=$(date -d "$(echo | openssl s_client -connect blabel.dev:443 -servername blabel.dev 2>/dev/null | openssl x509 -enddate -noout | cut -d'=' -f2)" "+%s")
 current_epoch=$(date "+%s")
-renew_days_threshold=25
+renew_days_threshold=50
 days_diff=$((($end_epoch - $current_epoch) / 60 / 60 / 24))
 
 if [ $days_diff -lt $renew_days_threshold ]; then
