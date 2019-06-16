@@ -23,4 +23,5 @@ letsencrypt-renewal:
     - export PATH=$PATH:$CI_PROJECT_DIR
     - git config --global user.name $GITLAB_USER_LOGIN
     - git config --global user.email $GITLAB_USER_EMAIL
+    - chmod +x ./scripts/letsencrypt_generate.sh ./scripts/letsencrypt_authenticator.sh ./scripts/letsencrypt_cleanup.sh 
     - ./scripts/letsencrypt_generate.sh
