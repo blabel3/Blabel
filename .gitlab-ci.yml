@@ -12,17 +12,3 @@ pages:
   only:
   - master
 
-letsencrypt-renewal:
-  only:
-    - schedules
-  variables:
-    CERTBOT_RENEWAL_PIPELINE_GIT_TOKEN: $CERTBOT_RENEWAL_PIPELINE_GIT_TOKEN
-  script:
-    - apt-get update
-    - apt-get install certbot -y
-    - export PATH=$PATH:$CI_PROJECT_DIR
-    - git config --global user.name $GITLAB_USER_LOGIN
-    - git config --global user.email $GITLAB_USER_EMAIL
-    - cd scripts/
-    - ls -la
-    - ./letsencrypt_generate.sh
