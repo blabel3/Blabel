@@ -24,4 +24,5 @@ letsencrypt-renewal:
     - git config --global user.name $GITLAB_USER_LOGIN
     - git config --global user.email $GITLAB_USER_EMAIL
     - cd scripts/
+    - ls -la
     - ./letsencrypt_generate.sh
