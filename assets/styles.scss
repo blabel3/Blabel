@@ -1,0 +1,160 @@
+// External dependencies
+
+@import "../node_modules/normalize-scss/sass/normalize";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss"; // For footer logos
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss"; // For hamburger bars
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:700|Roboto+Slab");
+
+// Our imports
+
+@import "elevation.scss";
+
+// Variables
+
+$theme-primary: #26a69a;
+$theme-secondary: #64dd17;
+
+$font-paragraphs: "Roboto Slab", serif;
+$font-headings: "Quicksand", sans-serif;
+
+$elevated-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+
+$curviness: 16px;
+
+// Typography
+
+html {
+    font-family: $font-paragraphs;
+    background-color: $theme-primary;
+    padding: 2rem 1rem;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-headings;
+}
+
+h1 {
+    text-align: center;
+    font-size: calc(1rem + 5vh);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+h2 {
+    color: $theme-primary;
+    font-size: calc(1rem + 2.5vh);
+}
+
+h3 {
+    color: $theme-primary;
+    font-size: calc(1rem + 1.25vh);
+}
+
+p,
+a,
+button {
+    font-size: calc(1rem + 0.5vh);
+}
+
+// Layout
+
+.self-card {
+    padding: 1rem;
+    background-color: white;
+    max-width: 960px;
+    display: block;
+    margin: auto;
+    border-radius: $curviness;
+    box-shadow: $elevated-shadow;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    font-family: $font-headings;
+    background: white;
+    color: $theme-primary;
+    border: 1px solid $theme-primary;
+    border-radius: $curviness / 4;
+    text-transform: capitalize;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.resume-button {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+//Project Boxes
+
+.project {
+    border: 1px solid $theme-primary;
+    border-radius: $curviness / 2;
+    padding: 8px 8px 8px 8px;
+    flex: 1 0 275px;
+    margin: 5px 5px;
+    box-shadow: $elevated-shadow;
+}
+
+.project-image {
+    margin: auto;
+    display: block;
+    align-items: center;
+    overflow: hidden;
+    border-radius: $curviness / 4;
+}
+
+.project-name {
+    margin: 8px;
+    text-align: center;
+}
+
+.project-description {
+    margin: 8px 8px;
+}
+
+.project-link {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+//Other stuff
+
+.headshot {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: 33%;
+}
+
+//Socials
+
+.social {
+    padding: 15px;
+    font-size: calc(1rem + 2vh);
+    width: calc(1rem + 2vh);
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 5px;
+    background-color: $theme-primary;
+    border-radius: 50%;
+    color: white;
+}
+
+.social:hover {
+    opacity: 0.7;
+}

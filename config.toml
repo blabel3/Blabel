@@ -1,0 +1,10 @@
+baseURL = "https://blabel.dev/"
+languageCode = "en-us"
+title = "Blabel"
+
+[params]
+    author = "Blake Abel"
+    description = "Blake Abel (Blabel!)'s online home base."
+    
+    stylesheet = "styles.css"
+    script = "app.js"
