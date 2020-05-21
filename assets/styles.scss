@@ -88,7 +88,7 @@ body {
 }
 
 .ascii {
-    font-family: mono;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     font-size: 10px;
     @include Rainbow(10s)
@@ -97,7 +97,6 @@ body {
 .terminal__bar {
     margin: -4px -4px -4px -8px;
     background-color: #E4E3E6;
-    border-radius: 8px 8px 0 0;
     display: flex;
     padding: 4px;
     justify-content: flex-end;
@@ -111,14 +110,17 @@ body {
     margin-left: 4px;
 
     &--green {
+        @extend .terminal__circle;
         background-color: #2FE601;
     }
 
     &--yellow {
+        @extend .terminal__circle;
         background-color: #FFFB00;
     }
 
     &--red {
+        @extend .terminal__circle;
         background-color: #E60800;
     }
 

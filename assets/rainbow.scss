@@ -13,7 +13,7 @@
   background-size: 800% 800%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: rainbow $duration linear infinite;
+  animation: rainbow $duration ease infinite;
   animation-name: rainbow;
   animation-duration: $duration;
   animation-timing-function: cubic-bezier(0, 0.25, 1, 0.75);
