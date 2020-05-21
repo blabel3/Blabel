@@ -21,7 +21,8 @@
     "prebuild": "find ./docs ! -name 'CNAME' -type f -exec rm -rf {} +",
     "build": "hugo -d docs && npm run parcel",
     "serve": "hugo serve -d docs",
-    "start": "npm run build && npm run serve"
+    "start": "npm run build && npm run serve",
+    "parcel-watch": "parcel watch assets/app.ts assets/styles.scss --out-dir static"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
