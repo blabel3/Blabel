@@ -6031,7 +6031,7 @@ readers do not read off random characters that represent icons */
   }
 }
 html {
-  font-family: "IBM Plex Sans", serif;
+  font-family: "IBM Plex Sans", sans-serif;
   background: #37ffc5;
   background: linear-gradient(135deg, #37ffc5 0%, #35c0ff 65%, #0090ff 100%);
   font-size: 16px;
@@ -6068,6 +6068,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 12px;
+  box-sizing: border-box;
 }
 
 .terminal {
@@ -6083,21 +6084,6 @@ body {
   word-wrap: break-word;
   box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.2);
 }
-
-.ascii {
-  font-family: "Courier New", Courier, monospace;
-  margin: 0;
-  font-size: min(14px, 2vw);
-  background-image: repeating-linear-gradient(45deg, #ffa0ff, #4a4aff, #00ac8f, green, yellow, orange, red, violet);
-  background-size: 800% 800%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: rainbow 10s ease infinite;
-  text-align: center;
-  line-height: min(14px, 2vw);
-  white-space: pre;
-}
-
 .terminal__bar {
   margin: -4px -4px -4px -8px;
   background-color: #E4E3E6;
@@ -6105,7 +6091,6 @@ body {
   padding: 4px;
   justify-content: flex-end;
 }
-
 .terminal__circle, .terminal__circle--red, .terminal__circle--yellow, .terminal__circle--green {
   height: 16px;
   width: 16px;
@@ -6123,6 +6108,24 @@ body {
   background-color: #E60800;
 }
 
+.ascii {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  font-size: min(16px, 2.5vw);
+  background-image: repeating-linear-gradient(45deg, #ffa0ff, #4a4aff, #00ac8f, green, yellow, orange, red, violet);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 10s ease infinite;
+  text-align: center;
+  line-height: min(16px, 2.5vw);
+  white-space: pre;
+}
+
+.introduction {
+  font-size: 16px;
+}
+
 .self-card {
   padding: 1rem;
   background-color: white;
@@ -6130,14 +6133,8 @@ body {
   display: block;
   margin: auto;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
-  margin-top: -64px;
+  margin-top: -32px;
   box-sizing: border-box;
-}
-
-.box-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 button {
@@ -6145,7 +6142,7 @@ button {
   background: white;
   color: #239e93;
   border: 1px solid #239e93;
-  border-radius: 4px;
+  border-radius: 2px;
   text-transform: capitalize;
 }
 
@@ -6154,38 +6151,6 @@ button:hover {
 }
 
 .resume-button {
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-
-.project {
-  border: 1px solid #239e93;
-  border-radius: 8px;
-  padding: 8px 8px 8px 8px;
-  flex: 1 0 275px;
-  margin: 5px 5px;
-  box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.2);
-}
-
-.project-image {
-  margin: auto;
-  display: block;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 4px;
-}
-
-.project-name {
-  margin: 8px;
-  text-align: center;
-}
-
-.project-description {
-  margin: 8px 8px;
-}
-
-.project-link {
   display: block;
   margin: auto;
   text-align: center;
@@ -6219,23 +6184,10 @@ footer {
   opacity: 0.8;
 }
 
-/*
-@media screen and (min-width: 330px) {
-    .ascii {
-        font-size: 10px;
-    }
+@media screen and (min-width: 900px) {
+  .self-card {
+    border-radius: 8px;
+  }
 }
-
-@media screen and (min-width: 400px){
-    .ascii {
-        font-size: 12px;
-    }
-}
-
-@media screen and (min-width: $main-width){
-    .self-card {
-        border-radius: $curviness;
-    }
-}*/
 
 /*# sourceMappingURL=/styles.css.map */

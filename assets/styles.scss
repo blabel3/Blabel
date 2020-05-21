@@ -24,17 +24,18 @@ $gradient-2: #35c0ff;
 $gradient-3: #0090ff;
 $gradient-angle: 135deg;
 
-$font-paragraphs: "IBM Plex Sans", serif;
-$font-headings: "IBM Plex Sans", sans-serif;
+$main-font: 'IBM Plex Sans', sans-serif;
+$terminal-font: 'IBM Plex Mono', monospace;
+$ascii-font: 'Courier New', Courier, monospace;
 
-$curviness: 16px;
+$curviness: 8px;
 
 $main-width: 900px;
 
 // Typography
 
 html {
-    font-family: $font-paragraphs;
+    font-family: $main-font;
     background: rgb(55,255,197);
     background: linear-gradient(135deg, rgba(55,255,197,1) 0%, rgba(53,192,255,1) 65%, rgba(0,144,255,1) 100%); 
     font-size: 16px;
@@ -43,7 +44,7 @@ html {
 h1,
 h2,
 h3 {
-    font-family: $font-headings;
+    font-family: $main-font;
     font-weight: bold;
 }
 
@@ -73,6 +74,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 12px;
+    box-sizing: border-box;
 }
 
 .terminal {
@@ -80,55 +82,59 @@ body {
     color: white;
     font-family: "IBM Plex Mono";
     font-size: 12px;
-    border-radius: 8px;
+    border-radius: $curviness;
     padding:4px 4px 4px 8px;
     width: 600px;
     max-width: 100%;
     overflow: hidden;
     word-wrap: break-word; 
-    @include BoxShadow(9)
+    @include BoxShadow(9);
+
+    &__bar {
+        margin: -4px -4px -4px -8px;
+        background-color: #E4E3E6;
+        display: flex;
+        padding: 4px;
+        justify-content: flex-end;
+    }
+
+    &__circle {
+        height: 16px;
+        width: 16px;
+        display: block;
+        border-radius: 50%;
+        margin-left: 4px;
+    
+        &--green {
+            @extend .terminal__circle;
+            background-color: #2FE601;
+        }
+    
+        &--yellow {
+            @extend .terminal__circle;
+            background-color: #FFFB00;
+        }
+    
+        &--red {
+            @extend .terminal__circle;
+            background-color: #E60800;
+        }
+    
+    }
 }
 
 .ascii {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: $ascii-font;
     margin: 0;
-    font-size: min(14px, 2vw);
+    font-size: min(16px, 2.5vw);
     @include Rainbow(10s);
     text-align:center;
-    line-height: min(14px,2vw);
+    line-height: min(16px,2.5vw);
     white-space: pre;
 }
 
-.terminal__bar {
-    margin: -4px -4px -4px -8px;
-    background-color: #E4E3E6;
-    display: flex;
-    padding: 4px;
-    justify-content: flex-end;
-}
-
-.terminal__circle {
-    height: 16px;
-    width: 16px;
-    display: block;
-    border-radius: 50%;
-    margin-left: 4px;
-
-    &--green {
-        @extend .terminal__circle;
-        background-color: #2FE601;
-    }
-
-    &--yellow {
-        @extend .terminal__circle;
-        background-color: #FFFB00;
-    }
-
-    &--red {
-        @extend .terminal__circle;
-        background-color: #E60800;
-    }
-
+.introduction {
+    font-size: 16px;
 }
 
 .self-card {
@@ -138,18 +144,12 @@ body {
     display: block;
     margin: auto;
     @include BoxShadow(3);
-    margin-top: -64px;
+    margin-top: -32px;
     box-sizing: border-box;
 }
 
-.box-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 button {
-    font-family: $font-headings;
+    font-family: $main-font;
     background: white;
     color: $theme-primary;
     border: 1px solid $theme-primary;
@@ -162,40 +162,6 @@ button:hover {
 }
 
 .resume-button {
-    display: block;
-    margin: auto;
-    text-align: center;
-}
-
-//Project Boxes
-
-.project {
-    border: 1px solid $theme-primary;
-    border-radius: $curviness / 2;
-    padding: 8px 8px 8px 8px;
-    flex: 1 0 275px;
-    margin: 5px 5px;
-    @include BoxShadow(9)
-}
-
-.project-image {
-    margin: auto;
-    display: block;
-    align-items: center;
-    overflow: hidden;
-    border-radius: $curviness / 4;
-}
-
-.project-name {
-    margin: 8px;
-    text-align: center;
-}
-
-.project-description {
-    margin: 8px 8px;
-}
-
-.project-link {
     display: block;
     margin: auto;
     text-align: center;
@@ -234,21 +200,9 @@ footer{
     }
 }
 
-/*
-@media screen and (min-width: 330px) {
-    .ascii {
-        font-size: 10px;
-    }
-}
-
-@media screen and (min-width: 400px){
-    .ascii {
-        font-size: 12px;
-    }
-}
 
 @media screen and (min-width: $main-width){
     .self-card {
         border-radius: $curviness;
     }
-}*/
+}
