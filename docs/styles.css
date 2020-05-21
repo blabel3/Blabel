@@ -6084,7 +6084,7 @@ body {
 }
 
 .ascii {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
   margin: 0;
   font-size: min(14px, 2vw);
   background-image: repeating-linear-gradient(45deg, violet, #510080, blue, green, yellow, orange, red, violet);
@@ -6093,6 +6093,7 @@ body {
   -webkit-text-fill-color: transparent;
   animation: rainbow 10s ease infinite;
   text-align: center;
+  line-height: min(14px, 2vw);
 }
 
 .terminal__bar {
