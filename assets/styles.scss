@@ -91,7 +91,7 @@ body {
 .ascii {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    font-size: min(14px, 2.5vw);
+    font-size: min(14px, 2vw);
     @include Rainbow(10s);
     text-align:center;
 }

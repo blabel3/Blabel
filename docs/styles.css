@@ -6086,7 +6086,7 @@ body {
 .ascii {
   font-family: "Courier New", Courier, monospace;
   margin: 0;
-  font-size: min(14px, 2.5vw);
+  font-size: min(14px, 2vw);
   background-image: repeating-linear-gradient(45deg, violet, #510080, blue, green, yellow, orange, red, violet);
   background-size: 800% 800%;
   -webkit-background-clip: text;
