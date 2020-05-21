@@ -5,19 +5,26 @@
 @import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss"; // For footer logos
 @import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss"; // For hamburger bars
 
-@import url("https://fonts.googleapis.com/css?family=Quicksand:700|Roboto+Slab");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 // Our imports
 
 @import "elevation.scss";
+@import "rainbow.scss";
 
 // Variables
 
 $theme-primary: #26a69a;
 $theme-secondary: #64dd17;
 
-$font-paragraphs: "Roboto Slab", serif;
-$font-headings: "Quicksand", sans-serif;
+$gradient-1: #37ffc5;
+$gradient-2: #35c0ff;
+$gradient-3: #0090ff;
+$gradient-angle: 135deg;
+
+$font-paragraphs: "IBM Plex Sans", serif;
+$font-headings: "IBM Plex Sans", sans-serif;
 
 $elevated-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
 
@@ -27,8 +34,8 @@ $curviness: 16px;
 
 html {
     font-family: $font-paragraphs;
-    background-color: $theme-primary;
-    padding: 2rem 1rem;
+    background: rgb(55,255,197);
+    background: linear-gradient(135deg, rgba(55,255,197,1) 0%, rgba(53,192,255,1) 65%, rgba(0,144,255,1) 100%); 
     font-size: 16px;
 }
 
@@ -36,32 +43,86 @@ h1,
 h2,
 h3 {
     font-family: $font-headings;
+    font-weight: bold;
 }
 
 h1 {
     text-align: center;
-    font-size: calc(1rem + 5vh);
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
 h2 {
     color: $theme-primary;
-    font-size: calc(1rem + 2.5vh);
 }
 
 h3 {
     color: $theme-primary;
-    font-size: calc(1rem + 1.25vh);
-}
-
-p,
-a,
-button {
-    font-size: calc(1rem + 0.5vh);
 }
 
 // Layout
+
+body {
+    margin: 0;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.terminal {
+    background-color: #051712;
+    color: white;
+    font-family: "IBM Plex Mono";
+    font-size: 12px;
+    border-radius: 8px;
+    padding:4px 4px 4px 8px;
+    max-width: 100%;
+    overflow: hidden;
+    word-wrap: break-word; 
+    @include BoxShadow(9)
+}
+
+.ascii {
+    font-family: mono;
+    margin: 0;
+    font-size: 10px;
+    @include Rainbow(10s)
+}
+
+.terminal__bar {
+    margin: -4px -4px -4px -8px;
+    background-color: #E4E3E6;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    padding: 4px;
+    justify-content: flex-end;
+}
+
+.terminal__circle {
+    height: 16px;
+    width: 16px;
+    display: block;
+    border-radius: 50%;
+    margin-left: 4px;
+
+    &--green {
+        background-color: #2FE601;
+    }
+
+    &--yellow {
+        background-color: #FFFB00;
+    }
+
+    &--red {
+        background-color: #E60800;
+    }
+
+}
 
 .self-card {
     padding: 1rem;
@@ -71,6 +132,8 @@ button {
     margin: auto;
     border-radius: $curviness;
     box-shadow: $elevated-shadow;
+    margin-top: -64px;
+    margin-bottom: 64px;
 }
 
 .box-container {
@@ -157,4 +220,10 @@ button:hover {
 
 .social:hover {
     opacity: 0.7;
+}
+
+@media screen and (min-width: 400px){
+    .ascii {
+        font-size: 12px;
+    }
 }
