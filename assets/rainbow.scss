@@ -14,14 +14,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbow $duration ease infinite;
-  animation-name: rainbow;
-  animation-duration: $duration;
-  animation-timing-function: cubic-bezier(0, 0.25, 1, 0.75);
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
 }
 
 @keyframes rainbow { 
