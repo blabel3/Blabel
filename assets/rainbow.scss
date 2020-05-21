@@ -1,9 +1,9 @@
 @mixin Rainbow($duration) {
   background-image: repeating-linear-gradient(
     45deg,
-    violet,
-    rgb(81, 0, 128),
-    blue,
+    rgb(255, 160, 255),
+    rgb(74, 74, 255),
+    rgb(0, 172, 143),
     green,
     yellow,
     orange,

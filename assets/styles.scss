@@ -7,6 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 // Our imports
 
@@ -89,12 +90,13 @@ body {
 }
 
 .ascii {
-    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     font-size: min(14px, 2vw);
     @include Rainbow(10s);
     text-align:center;
     line-height: min(14px,2vw);
+    white-space: pre;
 }
 
 .terminal__bar {
