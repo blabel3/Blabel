@@ -6147,6 +6147,25 @@ img {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
+.resume-button {
+  display: block;
+  margin: 16px auto;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  background: white;
+  border: 1px solid #239e93;
+  border-radius: 2px;
+  text-transform: capitalize;
+}
+.resume-button a {
+  text-decoration: none;
+  color: #239e93;
+  font-size: 16px;
+}
+.resume-button :hover {
+  opacity: 0.7;
+}
+
 .projects-container {
   display: grid;
   grid-gap: 16px;
@@ -6165,6 +6184,7 @@ img {
 }
 .project-text {
   flex-grow: 1;
+  height: 100%;
 }
 .project-text__title {
   text-decoration: none;
@@ -6180,25 +6200,6 @@ img {
   margin: auto;
   width: 50%;
   max-width: 100%;
-}
-
-.resume-button {
-  display: block;
-  margin: 16px auto;
-  text-align: center;
-  font-family: "IBM Plex Sans", sans-serif;
-  background: white;
-  border: 1px solid #239e93;
-  border-radius: 2px;
-  text-transform: capitalize;
-}
-.resume-button a {
-  text-decoration: none;
-  color: #239e93;
-  font-size: 16px;
-}
-.resume-button :hover {
-  opacity: 0.7;
 }
 
 footer {

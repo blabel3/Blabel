@@ -158,6 +158,28 @@ img {
     @include BoxShadow(1);
 }
 
+.resume-button {
+    display: block;
+    margin: 16px auto;
+    text-align: center;
+    font-family: $main-font;
+    background: white;
+
+    border: 1px solid $theme-primary;
+    border-radius: $curviness / 4;
+    text-transform: capitalize;
+
+    a {
+        text-decoration: none;
+        color: $theme-primary;
+        font-size: 16px;
+    }
+
+    :hover {
+        opacity: 0.7;
+    }
+}
+
 .projects-container {
     display: grid;
     grid-gap: 16px;
@@ -177,6 +199,7 @@ img {
 
     &-text {
         flex-grow: 1;
+        height: 100%;
 
         &__title {
             text-decoration: none;
@@ -199,28 +222,6 @@ img {
     } 
 
     
-}
-
-.resume-button {
-    display: block;
-    margin: 16px auto;
-    text-align: center;
-    font-family: $main-font;
-    background: white;
-
-    border: 1px solid $theme-primary;
-    border-radius: $curviness / 4;
-    text-transform: capitalize;
-
-    a {
-        text-decoration: none;
-        color: $theme-primary;
-        font-size: 16px;
-    }
-
-    :hover {
-        opacity: 0.7;
-    }
 }
 
 //Socials
