@@ -59,6 +59,10 @@ h1 {
     font-size: 2rem;
 }
 
+a {
+    color: $theme-primary;
+}
+
 // Layout
 
 body {
@@ -203,10 +207,6 @@ img {
 
         &__title {
             text-decoration: none;
-        }
-
-        &__link {
-            color: $theme-primary;
         }
     
         &__code-icon {
