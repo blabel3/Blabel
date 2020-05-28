@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.70.0" /><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.70.0" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +41,8 @@
 
 				<p>blabel@website:~$ cat introduction.txt</p>
 
-				<p class="introduction">Hi, I'm Blake. I'm a software developer currently studying at Boston University. Check out some of the projects I've worked on below! </p>
+				<p class="introduction">Hi, I'm Blake. I'm a software developer currently studying at Boston University. 
+					When I'm not coding, you might be able to catch me on my radio show on WTBU. Thanks for visiting my site!  </p>
 				
 			</div>
 		</section>
@@ -49,16 +50,34 @@
 		
 		<section class="self-card">
 
-			<img class="headshot" src="assets/headshot.jpg" alt="headshot">
-		  
-		  
-			<div class="resume-button"><a href="https://gitlab.com/blabel3/resume/raw/master/resume.pdf?inline=false"><button> <i class="fas fa-file-download"></i> Download My Resume</button></a></div>
-		  
-			<h2>Projects</h2>
-		  
-			<p>Here are all the projects I've been working on recently, pulled from my GitLab account. </p>
+			<picture>
+				<source srcset="/img/headshot.webp" type="image/webp">
+				<img class="headshot" src="/img/headshot.jpg" alt="headshot">
+			</picture>		  
 		  		  
-			<h2>Talk to me</h2>
+			<h1>Projects</h1>
+
+			<p>Here are all the projects I've been working on recently.</p>
+
+			<div class="resume-button"><a href="https://gitlab.com/blabel3/resume/raw/master/resume.pdf?inline=false"><button> <i class="fas fa-file-download"></i> Download My Resume</button></a></div>
+
+			
+			<div class="project">
+				<h2>Snapshots</h2>
+				<h3>Check out the 
+					<a href="https://github.com/blabel3/snapshots" class="project__link">
+						<i aria-hidden="true" class="fab fa-github project__code-icon"></i>Code
+				</a></h3>
+				<p>Server application that takes snapshots of websites to automatically build an archive of how it changes over time.</p>
+				  
+<picture>
+    <source srcset="img/snapshots-logo.webp" type="image/webp">
+    <img class="project__image" src="img/snapshots-logo.png">
+</picture>
+			</div>
+			
+		  		  		  
+			<h1>Talk to me</h1>
 		  
 			<p>You can <a href="mailto:blakeabel@blabel.dev">email me</a> to get in touch with me directly, 
 			or you can <a href="https://sibforms.com/serve/MUIEAPOrc_TY1IOTTtSkr2pW_mEOquJrIDOKr77ShlY3SnGr5X4aPoST1lEW8JPqSQSi6UbTMpX2N-N2Siv4Ng5NX1ZkfzI2gQ8WD8bRhUM6rZrQ7uvTDvUykre-z_ErnV7fwNHEvN_QIC9Lh919QCKp_DDnrMi1NZ-_b9nKQJkcfYD2E2FU_V5Y5MkgEjERifrhaFiGTmgO21fS">subscribe to my newsletter</a>

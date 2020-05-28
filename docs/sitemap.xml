@@ -3,21 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://blabel.dev/projects/</loc>
     <lastmod>2020-05-18T13:50:48-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://blabel.dev/</loc>
     <lastmod>2020-05-18T13:43:21-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://blabel.dev/projects/snapshots/</loc>
+    <lastmod>2019-08-02T02:15:07-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://blabel.dev/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blabel.dev/tags/</loc>
   </url>
   
 </urlset>
