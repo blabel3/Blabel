@@ -2,12 +2,12 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 description: 
-thumbnail: 
+image: 
 draft: true
 repo:
 ---
 
-# Title here
+# {{ replace .Name "-" " " | title }}
 
 Description here
 

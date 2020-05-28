@@ -21,7 +21,8 @@
 
 				<p>blabel@website:~$ cat introduction.txt</p>
 
-				<p class="introduction">Hi, I'm Blake. I'm a software developer currently studying at Boston University. Check out some of the projects I've worked on below! </p>
+				<p class="introduction">Hi, I'm Blake. I'm a software developer currently studying at Boston University. 
+					When I'm not coding, you might be able to catch me on my radio show on WTBU. Thanks for visiting my site!  </p>
 				
 			</div>
 		</section>
@@ -29,16 +30,30 @@
 		<!--TODO: Fix all the old stuff -->
 		<section class="self-card">
 
-			<img class="headshot" src="assets/headshot.jpg" alt="headshot">
-		  
-		  
-			<div class="resume-button"><a href="https://gitlab.com/blabel3/resume/raw/master/resume.pdf?inline=false"><button> <i class="fas fa-file-download"></i> Download My Resume</button></a></div>
-		  
-			<h2>Projects</h2>
-		  
-			<p>Here are all the projects I've been working on recently, pulled from my GitLab account. </p>
+			<picture>
+				<source srcset="/img/headshot.webp" type="image/webp">
+				<img class="headshot" src="/img/headshot.jpg" alt="headshot">
+			</picture>		  
 		  		  
-			<h2>Talk to me</h2>
+			<h1>Projects</h1>
+
+			<p>Here are all the projects I've been working on recently.</p>
+
+			<div class="resume-button"><a href="https://gitlab.com/blabel3/resume/raw/master/resume.pdf?inline=false"><button> <i class="fas fa-file-download"></i> Download My Resume</button></a></div>
+
+			{{ range (where .Site.RegularPages "Section" "projects") }}
+			<div class="project">
+				<h2>{{ .Title }}</h2>
+				<h3>Check out the 
+					<a href="{{ .Params.repo }}" class="project__link">
+						<i aria-hidden="true" class="fab fa-github project__code-icon"></i>Code
+				</a></h3>
+				<p>{{ .Description }}</p>
+				{{ partial "picture" (dict "filename" .Params.image)}}
+			</div>
+			{{ end }}
+		  		  		  
+			<h1>Talk to me</h1>
 		  
 			<p>You can <a href="mailto:blakeabel@blabel.dev">email me</a> to get in touch with me directly, 
 			or you can <a href="https://sibforms.com/serve/MUIEAPOrc_TY1IOTTtSkr2pW_mEOquJrIDOKr77ShlY3SnGr5X4aPoST1lEW8JPqSQSi6UbTMpX2N-N2Siv4Ng5NX1ZkfzI2gQ8WD8bRhUM6rZrQ7uvTDvUykre-z_ErnV7fwNHEvN_QIC9Lh919QCKp_DDnrMi1NZ-_b9nKQJkcfYD2E2FU_V5Y5MkgEjERifrhaFiGTmgO21fS">subscribe to my newsletter</a>
