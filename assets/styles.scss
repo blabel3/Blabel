@@ -56,6 +56,7 @@ h1 {
     text-align: center;
     margin-bottom: 32px;
     margin-top: 32px;
+    font-size: 2rem;
 }
 
 // Layout
@@ -157,34 +158,69 @@ img {
     @include BoxShadow(1);
 }
 
+.projects-container {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    margin-top: 16px;
+}
+
 .project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-    &__link {
-        color: $theme-primary;
+    padding: 8px;
+    @include BoxShadow(2);
+    border-radius: 4px;
+
+    &-text {
+        flex-grow: 1;
+
+        &__title {
+            text-decoration: none;
+        }
+
+        &__link {
+            color: $theme-primary;
+        }
+    
+        &__code-icon {
+            padding-right: 0.25em;
+        }
     }
 
-    &__code-icon {
-        padding-right: 0.25em;
-    }
-}
+    &__image {
+        display:block;
+        margin: auto;
+        width: 50%;
+        max-width: 100%;
+    } 
 
-button {
-    font-family: $main-font;
-    background: white;
-    color: $theme-primary;
-    border: 1px solid $theme-primary;
-    border-radius: $curviness / 4;
-    text-transform: capitalize;
-}
-
-button:hover {
-    opacity: 0.7;
+    
 }
 
 .resume-button {
     display: block;
-    margin: auto;
+    margin: 16px auto;
     text-align: center;
+    font-family: $main-font;
+    background: white;
+
+    border: 1px solid $theme-primary;
+    border-radius: $curviness / 4;
+    text-transform: capitalize;
+
+    a {
+        text-decoration: none;
+        color: $theme-primary;
+        font-size: 16px;
+    }
+
+    :hover {
+        opacity: 0.7;
+    }
 }
 
 //Socials
@@ -209,6 +245,10 @@ footer{
     &:hover {
         opacity: 0.8;
     }
+}
+
+.text-center {
+    text-align: center
 }
 
 

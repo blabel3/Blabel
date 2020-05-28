@@ -39,19 +39,28 @@
 
 			<p>Here are all the projects I've been working on recently.</p>
 
-			<div class="resume-button"><a href="https://gitlab.com/blabel3/resume/raw/master/resume.pdf?inline=false"><button> <i class="fas fa-file-download"></i> Download My Resume</button></a></div>
+			<button class="resume-button">
+				<a href="https://gitlab.com/blabel3/resume/raw/master/resume.pdf?inline=false">
+					<i class="fas fa-file-download"></i>
+					Download My Resume
+				</a>
+			</button>
 
+			<section class="projects-container">
 			{{ range (where .Site.RegularPages "Section" "projects") }}
 			<div class="project">
-				<h2>{{ .Title }}</h2>
-				<h3>Check out the 
-					<a href="{{ .Params.repo }}" class="project__link">
-						<i aria-hidden="true" class="fab fa-github project__code-icon"></i>Code
-				</a></h3>
-				<p>{{ .Description }}</p>
 				{{ partial "picture" (dict "filename" .Params.image)}}
+				<div class="project-text">
+					<h2 class="project-text__title text-center">{{ .Title }}</h2>
+					<h3 class="text-center">View the 
+						<a href="{{ .Params.repo }}" class="project-text__link">
+							<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
+					</a></h3>
+					<p>{{ .Description }}</p>
+				</div>
 			</div>
 			{{ end }}
+			</section>
 		  		  		  
 			<h1>Talk to me</h1>
 		  
