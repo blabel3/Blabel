@@ -7,4 +7,4 @@ title = "Blabel"
     description = "Blake Abel (Blabel!)'s online home base."
     
     stylesheet = "styles.css"
-    script = "app.js"
+    #script = "app.js" (No script currently in the site)

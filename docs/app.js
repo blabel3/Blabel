@@ -118,45 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"app.ts":[function(require,module,exports) {
-$(document).ready(function () {
-  $.get('https://gitlab.com/api/v4/users/blabel3/projects', function (data, status) {
-    if (status == 0) {
-      console.log('Error! :(');
-    } else {
-      console.log('Made request!');
-      addProjects(data);
-    }
-  });
-  /*
-  fetch('https://gitlab.com/api/v4/users/blabel3/projects').then(
-  function(response) {
-      console.log(response);
-      addProjects(response);
-  }
-  ).catch(
-  function(response) {
-      console.log("Request failed :(");
-  }
-  );*/
-});
 
-function addProjects(projects) {
-  //console.log(projects)
-  for (var i = 0; i < projects.length; i++) {
-    console.log(projects[i]);
-    $("#project-box").append("\
-         <div class=\"project\">\
-             <img class=\"project-image\"src=\"" + projects[i].avatar_url + "\" alt=\"Project Image\"  width=\"100dp\"> \
-             <h3 class=\"project-name\">" + projects[i].name + "</h3>\
-             <p class=\"project-description\">" + projects[i].description + "</p>\
-             <div class=\"project-link\">\
-                 <a href=\"" + projects[i].web_url + "\"><button class=\"source-button\">\
-                 <i class=\"fas fa-code\"></i> see the code\
-                 </button></a>\
-             </div>\
-         </div>");
-  }
-}
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -185,7 +147,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35205" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40491" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

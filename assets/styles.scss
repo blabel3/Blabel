@@ -3,7 +3,7 @@
 @import "../node_modules/normalize-scss/sass/normalize";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss"; // For footer logos
-@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss"; // For hamburger bars
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss"; // For resume logo
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
@@ -18,6 +18,9 @@
 
 $theme-primary: #239e93;
 $theme-secondary: #64dd17;
+
+$higher-contrast: #1d8077;
+$ultra-contrast: #15615a;
 
 $gradient-1: #37ffc5;
 $gradient-2: #35c0ff;
@@ -60,7 +63,7 @@ h1 {
 }
 
 a {
-    color: $theme-primary;
+    color: $higher-contrast;
 }
 
 // Layout
@@ -175,7 +178,7 @@ img {
 
     a {
         text-decoration: none;
-        color: $theme-primary;
+        color: $higher-contrast;
         font-size: 16px;
     }
 
@@ -207,6 +210,10 @@ img {
 
         &__title {
             text-decoration: none;
+        }
+
+        &__link {
+            color: $theme-primary;
         }
     
         &__code-icon {
