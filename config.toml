@@ -8,3 +8,4 @@ title = "Blabel"
     
     stylesheet = "styles.css"
     #script = "app.js" (No script currently in the site)
+    analytics = true
