@@ -2,33 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Blabel</title>
-    <link>https://blabel.dev/projects/</link>
+    <link>http://localhost:1313/projects/</link>
     <description>Recent content in Projects on Blabel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 18 May 2020 13:50:48 -0500</lastBuildDate>
     
-	<atom:link href="https://blabel.dev/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>WTBU App</title>
-      <link>https://blabel.dev/projects/wtbu-app/</link>
+      <link>http://localhost:1313/projects/wtbu-app/</link>
       <pubDate>Wed, 27 Nov 2019 12:17:30 -0500</pubDate>
       
-      <guid>https://blabel.dev/projects/wtbu-app/</guid>
+      <guid>http://localhost:1313/projects/wtbu-app/</guid>
       <description>WTBU App Description here
 More details + screenshots and stuff to follow.</description>
     </item>
     
     <item>
       <title>Snapshots</title>
-      <link>https://blabel.dev/projects/snapshots/</link>
+      <link>http://localhost:1313/projects/snapshots/</link>
       <pubDate>Fri, 02 Aug 2019 02:15:07 -0400</pubDate>
       
-      <guid>https://blabel.dev/projects/snapshots/</guid>
+      <guid>http://localhost:1313/projects/snapshots/</guid>
       <description>Snapshots Description here
 yada yada</description>
+    </item>
+    
+    <item>
+      <title>Olympus</title>
+      <link>http://localhost:1313/projects/olympus/</link>
+      <pubDate>Sun, 11 Nov 2018 00:50:18 -0500</pubDate>
+      
+      <guid>http://localhost:1313/projects/olympus/</guid>
+      <description>Olympus Description here
+More details + screenshots and stuff to follow.</description>
+    </item>
+    
+    <item>
+      <title>E-Mission</title>
+      <link>http://localhost:1313/projects/e-mission/</link>
+      <pubDate>Sun, 04 Nov 2018 00:05:35 -0500</pubDate>
+      
+      <guid>http://localhost:1313/projects/e-mission/</guid>
+      <description>E Mission Description here
+More details + screenshots and stuff to follow.</description>
+    </item>
+    
+    <item>
+      <title>That Mixtape</title>
+      <link>http://localhost:1313/projects/thatmixtape/</link>
+      <pubDate>Thu, 02 Aug 2018 00:06:02 -0500</pubDate>
+      
+      <guid>http://localhost:1313/projects/thatmixtape/</guid>
+      <description>ThatMixtape Description here
+More details + screenshots and stuff to follow.</description>
+    </item>
+    
+    <item>
+      <title>Magnezone</title>
+      <link>http://localhost:1313/projects/magnezone/</link>
+      <pubDate>Mon, 23 Apr 2018 00:06:11 -0500</pubDate>
+      
+      <guid>http://localhost:1313/projects/magnezone/</guid>
+      <description>Magnezone Description here
+More details + screenshots and stuff to follow.</description>
     </item>
     
   </channel>
