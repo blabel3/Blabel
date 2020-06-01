@@ -1,8 +1,15 @@
 {{ define "main" }}
-	<main>
+	<main class="main-card">
+		<button class="button--back">
+			<a href="/">
+				<i class="fas fa-arrow-left"></i>
+				Back
+			</a>
+		</button>
 		<article>
+			{{ partial "picture" (dict "filename" .Params.image)}}
 			<h1>{{ .Title }}</h1>
-			<time>{{/* .Date.Format "02.01.2006 15:04" */}}</time>
+			<time><h3 class="text-center">{{ .Date.Format "January 2, 2006" }}</h3></time>
 			<div>
 				{{ .Content }}
 			</div>

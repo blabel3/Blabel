@@ -42,6 +42,7 @@ html {
     background: rgb(55,255,197);
     background: linear-gradient(135deg, rgba(55,255,197,1) 0%, rgba(53,192,255,1) 65%, rgba(0,144,255,1) 100%); 
     font-size: 16px;
+    min-height: 100%;
 }
 
 h1,
@@ -141,15 +142,20 @@ body {
     font-size: 16px;
 }
 
-.self-card {
+.main-card {
     padding: 16px;
     background-color: white;
     max-width: $main-width;
     display: block;
     margin: auto;
     @include BoxShadow(3);
-    margin-top: -32px;
+    margin-top: 32px;
     box-sizing: border-box;
+
+    &--hero {
+        @extend .main-card;
+        margin-top: -32px;
+    }
 }
 
 img {
@@ -165,14 +171,11 @@ img {
     @include BoxShadow(1);
 }
 
-.resume-button {
-    display: block;
-    margin: 16px auto;
+.button {
     text-align: center;
     font-family: $main-font;
     background: white;
 
-    border: 1px solid $theme-primary;
     border-radius: $curviness / 4;
     text-transform: capitalize;
 
@@ -185,7 +188,26 @@ img {
     :hover {
         opacity: 0.7;
     }
-}
+
+    &--resume {
+        @extend .button;
+        display: block;
+        margin: 16px auto;
+        border: 1px solid $theme-primary;
+    }
+
+    &--back {
+        @extend .button;
+        border: 0px;
+        position: relative;
+        padding: 8px 0 0 8px;
+
+        a i {
+            margin-right:8px;
+        }
+    }
+}    
+    
 
 .projects-container {
     display: grid;
@@ -214,6 +236,7 @@ img {
 
         &__link {
             color: $theme-primary;
+            text-decoration: none;
         }
     
         &__code-icon {
@@ -225,7 +248,7 @@ img {
         display:block;
         margin: auto;
         width: 50%;
-        max-width: 100%;
+        max-width: min(250px, 100%);
         border-radius: $curviness;
     } 
 
@@ -262,7 +285,7 @@ footer{
 
 
 @media screen and (min-width: $main-width){
-    .self-card {
+    .main-card {
         border-radius: $curviness;
     }
 }

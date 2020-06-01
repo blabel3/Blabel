@@ -7,8 +7,6 @@ draft: false
 repo: https://github.com/wtbu-radio/WTBU-App
 ---
 
-# WTBU App
-
 Description here
 
 More details + screenshots and stuff to follow. 

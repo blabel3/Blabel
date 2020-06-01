@@ -7,8 +7,6 @@ draft: false
 repo: https://github.com/blabel3/snapshots
 ---
 
-# Snapshots
-
 Description here
 
 yada yada

@@ -1,5 +1,5 @@
 {{ $slices := split .filename "." }} {{ $pureFilename := index $slices 0}} {{ $fallbackFormat := index $slices 1}}
 <picture>
-    <source srcset="img/{{ $pureFilename }}.webp" type="image/webp">
-    <img class="project__image" src="img/{{ $pureFilename }}.{{ $fallbackFormat}}" alt="{{ $pureFilename }}">
+    <source srcset="/img/{{ $pureFilename }}.webp" type="image/webp">
+    <img class="project__image" src="/img/{{ $pureFilename }}.{{ $fallbackFormat}}" alt="{{ $pureFilename }}">
 </picture>

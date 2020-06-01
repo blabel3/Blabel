@@ -7,8 +7,6 @@ draft: false
 repo: https://github.com/blabel3/ThatMixtapeIsFire
 ---
 
-# ThatMixtape
-
 Description here
 
 More details + screenshots and stuff to follow. 

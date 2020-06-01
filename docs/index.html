@@ -29,161 +29,159 @@
 	
 </header>
 	
-	<main>
 
-		<section class="hero">
-			<div class="terminal">
-				<div class="terminal__bar">
-					<span class="terminal__circle--green"></span>
-					<span class="terminal__circle--yellow"></span>
-					<span class="terminal__circle--red"></span>
-				</div>
-				<p>blabel@website:~$ ./welcome &</p>
+	<section class="hero">
+		<div class="terminal">
+			<div class="terminal__bar">
+				<span class="terminal__circle--green"></span>
+				<span class="terminal__circle--yellow"></span>
+				<span class="terminal__circle--red"></span>
+			</div>
+			<p>blabel@website:~$ ./welcome &</p>
 
-				<p class="ascii">@@@@@@@\  @@\           @@\                 @@\ </p>
-				<p class="ascii">@@  __@@\ @@ |          @@ |                @@ |</p>
-				<p class="ascii">@@ |  @@ |@@ | @@@@@@\  @@@@@@@\   @@@@@@\  @@ |</p>
-				<p class="ascii">@@@@@@@\ |@@ | \____@@\ @@  __@@\ @@  __@@\ @@ |</p>
-				<p class="ascii">@@  __@@\ @@ | @@@@@@@ |@@ |  @@ |@@@@@@@@ |@@ |</p>
-				<p class="ascii">@@ |  @@ |@@ |@@  __@@ |@@ |  @@ |@@   ____|@@ |</p>
-				<p class="ascii">@@@@@@@  |@@ |\@@@@@@@ |@@@@@@@  |\@@@@@@@\ @@ |</p>
-				<p class="ascii">\_______/ \__| \_______|\_______/  \_______|\__|</p>
+			<p class="ascii">@@@@@@@\  @@\           @@\                 @@\ </p>
+			<p class="ascii">@@  __@@\ @@ |          @@ |                @@ |</p>
+			<p class="ascii">@@ |  @@ |@@ | @@@@@@\  @@@@@@@\   @@@@@@\  @@ |</p>
+			<p class="ascii">@@@@@@@\ |@@ | \____@@\ @@  __@@\ @@  __@@\ @@ |</p>
+			<p class="ascii">@@  __@@\ @@ | @@@@@@@ |@@ |  @@ |@@@@@@@@ |@@ |</p>
+			<p class="ascii">@@ |  @@ |@@ |@@  __@@ |@@ |  @@ |@@   ____|@@ |</p>
+			<p class="ascii">@@@@@@@  |@@ |\@@@@@@@ |@@@@@@@  |\@@@@@@@\ @@ |</p>
+			<p class="ascii">\_______/ \__| \_______|\_______/  \_______|\__|</p>
 
-				<p>blabel@website:~$ cat introduction.txt</p>
+			<p>blabel@website:~$ cat introduction.txt</p>
 
-				<p class="introduction">Hi, I'm Blake. I'm a software developer currently studying at Boston University. 
-					When I'm not coding, you might be able to catch me on my radio show on WTBU. Thanks for visiting my site!  </p>
+			<p class="introduction">Hi, I'm Blake. I'm a software developer currently studying at Boston University. 
+				When I'm not coding, you might be able to catch me on my radio show on WTBU. Thanks for visiting my site!  </p>
+			
+		</div>
+	</section>
+
+	<main class="main-card--hero">
+
+		<picture>
+			<source srcset="/img/headshot.webp" type="image/webp">
+			<img class="headshot" src="/img/headshot.jpg" alt="headshot">
+		</picture>		  
 				
-			</div>
-		</section>
+		<h1>Projects</h1>
 
+		<p>Here are all the projects I've been working on recently.</p>
+
+		<button class="button--resume">
+			<a href="https://github.com/blabel3/Resume/raw/master/resume.pdf">
+				<i class="fas fa-file-download"></i>
+				Download My Resume
+			</a>
+		</button>
+
+		<section class="projects-container">
 		
-		<section class="self-card">
+		<div class="project">
+			  
+<picture>
+    <source srcset="/img/wtbu-icon.webp" type="image/webp">
+    <img class="project__image" src="/img/wtbu-icon.png" alt="wtbu-icon">
+</picture>
+			<div class="project-text">
+				<h2 class="project-text__title text-center"><a class="project-text__link" href="https://blabel.dev/projects/wtbu-app/">WTBU App</a></h2>
+				<h3 class="text-center">View the 
+					<a href="https://github.com/wtbu-radio/WTBU-App" class="project-text__link">
+						<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
+				</a></h3>
+				<p>Mobile app for listening to WTBU live radio, and the archives of broadcasts over the last two weeks.</p>
+			</div>
+		</div>
+		
+		<div class="project">
+			  
+<picture>
+    <source srcset="/img/snapshots-logo.webp" type="image/webp">
+    <img class="project__image" src="/img/snapshots-logo.png" alt="snapshots-logo">
+</picture>
+			<div class="project-text">
+				<h2 class="project-text__title text-center"><a class="project-text__link" href="https://blabel.dev/projects/snapshots/">Snapshots</a></h2>
+				<h3 class="text-center">View the 
+					<a href="https://github.com/blabel3/snapshots" class="project-text__link">
+						<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
+				</a></h3>
+				<p>Server application for Dow Jones that takes snapshots of websites to automatically build an archive of how it changes over time.</p>
+			</div>
+		</div>
+		
+		<div class="project">
+			  
+<picture>
+    <source srcset="/img/olympus.webp" type="image/webp">
+    <img class="project__image" src="/img/olympus.png" alt="olympus">
+</picture>
+			<div class="project-text">
+				<h2 class="project-text__title text-center"><a class="project-text__link" href="https://blabel.dev/projects/olympus/">Olympus</a></h2>
+				<h3 class="text-center">View the 
+					<a href="https://github.com/zachbodi/OculusRobotControl" class="project-text__link">
+						<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
+				</a></h3>
+				<p>VR Project that lets someone trace a path with their hands, then send it to a robot for it to travel along.</p>
+			</div>
+		</div>
+		
+		<div class="project">
+			  
+<picture>
+    <source srcset="/img/e-mission.webp" type="image/webp">
+    <img class="project__image" src="/img/e-mission.png" alt="e-mission">
+</picture>
+			<div class="project-text">
+				<h2 class="project-text__title text-center"><a class="project-text__link" href="https://blabel.dev/projects/e-mission/">E-Mission</a></h2>
+				<h3 class="text-center">View the 
+					<a href="https://github.com/blabel3/e-mission" class="project-text__link">
+						<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
+				</a></h3>
+				<p>App made to educate about electric cars and reduce emissions. Made for WHACK 2018, won best Clean Transportation Hack.</p>
+			</div>
+		</div>
+		
+		<div class="project">
+			  
+<picture>
+    <source srcset="/img/mixtape.webp" type="image/webp">
+    <img class="project__image" src="/img/mixtape.png" alt="mixtape">
+</picture>
+			<div class="project-text">
+				<h2 class="project-text__title text-center"><a class="project-text__link" href="https://blabel.dev/projects/thatmixtape/">That Mixtape</a></h2>
+				<h3 class="text-center">View the 
+					<a href="https://github.com/blabel3/ThatMixtapeIsFire" class="project-text__link">
+						<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
+				</a></h3>
+				<p>Fun website made as a hackathon warm up to experiment with web animations and touch interactions.</p>
+			</div>
+		</div>
+		
+		<div class="project">
+			  
+<picture>
+    <source srcset="/img/magnezone.webp" type="image/webp">
+    <img class="project__image" src="/img/magnezone.png" alt="magnezone">
+</picture>
+			<div class="project-text">
+				<h2 class="project-text__title text-center"><a class="project-text__link" href="https://blabel.dev/projects/magnezone/">Magnezone</a></h2>
+				<h3 class="text-center">View the 
+					<a href="https://github.com/blabel3/Magnezone" class="project-text__link">
+						<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
+				</a></h3>
+				<p>Bot that responds to user commands in a Discord server. First time building using an API!</p>
+			</div>
+		</div>
+		
+		</section>
+						
+		<h1>Talk to me</h1>
+		
+		<p>You can <a href="mailto:blakeabel@blabel.dev">email me</a> to get in touch with me directly, 
+		or you can <a href="https://sibforms.com/serve/MUIEAPOrc_TY1IOTTtSkr2pW_mEOquJrIDOKr77ShlY3SnGr5X4aPoST1lEW8JPqSQSi6UbTMpX2N-N2Siv4Ng5NX1ZkfzI2gQ8WD8bRhUM6rZrQ7uvTDvUykre-z_ErnV7fwNHEvN_QIC9Lh919QCKp_DDnrMi1NZ-_b9nKQJkcfYD2E2FU_V5Y5MkgEjERifrhaFiGTmgO21fS">subscribe to my newsletter</a>
+		to get notified whenever I make something new.</p>
 
-			<picture>
-				<source srcset="/img/headshot.webp" type="image/webp">
-				<img class="headshot" src="/img/headshot.jpg" alt="headshot">
-			</picture>		  
-		  		  
-			<h1>Projects</h1>
-
-			<p>Here are all the projects I've been working on recently.</p>
-
-			<button class="resume-button">
-				<a href="https://gitlab.com/blabel3/resume/raw/master/resume.pdf?inline=false">
-					<i class="fas fa-file-download"></i>
-					Download My Resume
-				</a>
-			</button>
-
-			<section class="projects-container">
-			
-			<div class="project">
-				  
-<picture>
-    <source srcset="img/wtbu-icon.webp" type="image/webp">
-    <img class="project__image" src="img/wtbu-icon.png" alt="wtbu-icon">
-</picture>
-				<div class="project-text">
-					<h2 class="project-text__title text-center">WTBU App</h2>
-					<h3 class="text-center">View the 
-						<a href="https://github.com/wtbu-radio/WTBU-App" class="project-text__link">
-							<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
-					</a></h3>
-					<p>Mobile app for listening to WTBU live radio, and the archives of broadcasts over the last two weeks.</p>
-				</div>
-			</div>
-			
-			<div class="project">
-				  
-<picture>
-    <source srcset="img/snapshots-logo.webp" type="image/webp">
-    <img class="project__image" src="img/snapshots-logo.png" alt="snapshots-logo">
-</picture>
-				<div class="project-text">
-					<h2 class="project-text__title text-center">Snapshots</h2>
-					<h3 class="text-center">View the 
-						<a href="https://github.com/blabel3/snapshots" class="project-text__link">
-							<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
-					</a></h3>
-					<p>Server application for Dow Jones that takes snapshots of websites to automatically build an archive of how it changes over time.</p>
-				</div>
-			</div>
-			
-			<div class="project">
-				  
-<picture>
-    <source srcset="img/olympus.webp" type="image/webp">
-    <img class="project__image" src="img/olympus.png" alt="olympus">
-</picture>
-				<div class="project-text">
-					<h2 class="project-text__title text-center">Olympus</h2>
-					<h3 class="text-center">View the 
-						<a href="https://github.com/zachbodi/OculusRobotControl" class="project-text__link">
-							<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
-					</a></h3>
-					<p>VR Project that lets someone trace a path with their hands, then send it to a robot for it to travel along.</p>
-				</div>
-			</div>
-			
-			<div class="project">
-				  
-<picture>
-    <source srcset="img/e-mission.webp" type="image/webp">
-    <img class="project__image" src="img/e-mission.png" alt="e-mission">
-</picture>
-				<div class="project-text">
-					<h2 class="project-text__title text-center">E-Mission</h2>
-					<h3 class="text-center">View the 
-						<a href="https://github.com/blabel3/e-mission" class="project-text__link">
-							<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
-					</a></h3>
-					<p>App made to educate about electric cars and reduce emissions. Made for WHACK 2018, won best Clean Transportation Hack.</p>
-				</div>
-			</div>
-			
-			<div class="project">
-				  
-<picture>
-    <source srcset="img/mixtape.webp" type="image/webp">
-    <img class="project__image" src="img/mixtape.png" alt="mixtape">
-</picture>
-				<div class="project-text">
-					<h2 class="project-text__title text-center">That Mixtape</h2>
-					<h3 class="text-center">View the 
-						<a href="https://github.com/blabel3/ThatMixtapeIsFire" class="project-text__link">
-							<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
-					</a></h3>
-					<p>Fun website made as a hackathon warm up to experiment with web animations and touch interactions.</p>
-				</div>
-			</div>
-			
-			<div class="project">
-				  
-<picture>
-    <source srcset="img/magnezone.webp" type="image/webp">
-    <img class="project__image" src="img/magnezone.png" alt="magnezone">
-</picture>
-				<div class="project-text">
-					<h2 class="project-text__title text-center">Magnezone</h2>
-					<h3 class="text-center">View the 
-						<a href="https://github.com/blabel3/Magnezone" class="project-text__link">
-							<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
-					</a></h3>
-					<p>Bot that responds to user commands in a Discord server. First time building using an API!</p>
-				</div>
-			</div>
-			
-			</section>
-		  		  		  
-			<h1>Talk to me</h1>
-		  
-			<p>You can <a href="mailto:blakeabel@blabel.dev">email me</a> to get in touch with me directly, 
-			or you can <a href="https://sibforms.com/serve/MUIEAPOrc_TY1IOTTtSkr2pW_mEOquJrIDOKr77ShlY3SnGr5X4aPoST1lEW8JPqSQSi6UbTMpX2N-N2Siv4Ng5NX1ZkfzI2gQ8WD8bRhUM6rZrQ7uvTDvUykre-z_ErnV7fwNHEvN_QIC9Lh919QCKp_DDnrMi1NZ-_b9nKQJkcfYD2E2FU_V5Y5MkgEjERifrhaFiGTmgO21fS">subscribe to my newsletter</a>
-			to get notified whenever I make something new.</p>
-
-			</section>
 	</main>
+
 
 	<footer>
 	

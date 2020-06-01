@@ -7,8 +7,6 @@ draft: false
 repo: https://github.com/zachbodi/OculusRobotControl
 ---
 
-# Olympus
-
 Description here
 
 More details + screenshots and stuff to follow. 

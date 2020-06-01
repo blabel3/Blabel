@@ -7,8 +7,6 @@ draft: false
 repo: https://github.com/blabel3/Magnezone
 ---
 
-# Magnezone
-
 Description here
 
 More details + screenshots and stuff to follow. 
