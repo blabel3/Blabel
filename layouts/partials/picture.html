@@ -1,5 +1,6 @@
 {{ $slices := split .filename "." }} {{ $pureFilename := index $slices 0}} {{ $fallbackFormat := index $slices 1}}
+{{- $image := resources.Get (print "images/" .filename) -}}
 <picture>
-    <source srcset="/img/{{ $pureFilename }}.webp" type="image/webp">
-    <img class="project__image" src="/img/{{ $pureFilename }}.{{ $fallbackFormat}}" alt="{{ $pureFilename }}">
+    <source srcset="{{ ($image.Resize "250x webp icon").RelPermalink }}" type="image/webp">
+    <img class="project__image" src="{{ ($image.Resize "250x jpg").RelPermalink }}" alt="{{ $pureFilename }}">
 </picture>
