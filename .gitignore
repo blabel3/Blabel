@@ -1,11 +1,12 @@
 # API keys and secrets
 .env
 
-# Dependency directory
+# Dependency directory + build files
 node_modules
 .cache/
 .parcel-cache/
 .hugo_build.lock
+resources/
 
 # OS metadata
 .DS_Store
@@ -15,10 +16,3 @@ Thumbs.db
 logs
 *.log
 npm-debug.log*
-
-#Take out images that are already committed in assets (and served from docs!)
-static/
-resources/
-docs/*.jpg
-docs/*.webp
-docs/*.png
