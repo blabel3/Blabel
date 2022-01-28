@@ -18,7 +18,7 @@
   "license": "MIT",
   "scripts": {
     "prebuild": "find ./docs ! -name 'CNAME' -type f -exec rm -rf {} +",
-    "build": "hugo -d docs --minify",
+    "build": "hugo -d docs",
     "serve": "hugo serve -d docs",
     "start": "npm run serve"
   },

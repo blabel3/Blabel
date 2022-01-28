@@ -2,5 +2,5 @@
 {{- $image := resources.Get (print "images/" .filename) -}}
 <picture>
     <source srcset="{{ ($image.Resize "250x webp icon").RelPermalink }}" type="image/webp">
-    <img class="project__image" src="{{ ($image.Resize "250x jpg").RelPermalink }}" alt="{{ $pureFilename }}">
+    <img class="project__image" src="{{ ($image.Resize "250x jpg").RelPermalink }}" width="250" height="250" alt="{{ $pureFilename }}">
 </picture>
