@@ -18,14 +18,16 @@
   "license": "MIT",
   "scripts": {
     "prebuild": "find ./docs ! -name 'CNAME' -type f -exec rm -rf {} +",
-    "build": "hugo -d docs",
+    "build": "hugo -d docs --minify",
     "serve": "hugo serve -d docs",
-    "start": "npm run build && npm run serve"
+    "start": "npm run serve"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",
     "cssnano": "^5.0.16",
     "hugo-extended": "^0.92.1",
-    "sass": "^1.49.0",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
     "typescript": "^4.5.5"
   },
   "dependencies": {

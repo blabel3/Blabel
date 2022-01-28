@@ -10,8 +10,11 @@
 
 	{{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/normalize-scss/sass/normalize")) }}
 	{{ $options := (dict "transpiler" "dartsass" "enableSourceMap" true) }}
-	{{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options }}
-	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+	{{ $css := resources.Get "sass/main.scss" | resources.ToCSS $options }}
+	{{ $style := $css | resources.PostCSS }}
+
+	<!--link rel="stylesheet" href="{{ $style.RelPermalink }}"-->
+	<style>{{ $style.Content | safeCSS }}</style>
 
 	{{ with .Site.Params.stylesheet }}<link rel="stylesheet" href="/{{ . }}">{{ end }}
 	{{ with .Site.Params.script }}<script defer src="/{{ . }}"></script>{{ end }}
