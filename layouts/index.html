@@ -31,7 +31,7 @@
 		{{- $headshot := resources.Get (print "images/" "headshot.jpg") -}}
 		<picture>
 			<source srcset="{{ ($headshot.Resize "150x webp picture").RelPermalink }}" type="image/webp">
-			<img class="headshot" src="{{ ($headshot.Resize "150x").RelPermalink }}" alt="headshot">
+			<img class="headshot" width="150" height="150" src="{{ ($headshot.Resize "150x").RelPermalink }}" alt="headshot">
 		</picture>	  
 				
 		<h1>Projects</h1>
@@ -56,7 +56,7 @@
 		<div class="project">
 			{{ partial "picture" (dict "filename" .Params.image)}}
 			<div class="project-text">
-				<h2 class="project-text__title text-center"><a class="project-text__link" href="{{ .Permalink}}">{{ .Title }}</a></h2>
+				<h2 class="project-text__title text-center"><a class="project-text__link" href="{{ .RelPermalink}}">{{ .Title }}</a></h2>
 				<h3 class="text-center">View the 
 					<a href="{{ .Params.repo }}" class="project-text__link">
 						Code {{ partial "fontawesome.html" "github" }}
