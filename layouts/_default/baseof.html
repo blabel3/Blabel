@@ -18,8 +18,8 @@
 
 	{{- with .Site.Params.stylesheet }}<link rel="stylesheet" href="/{{ . }}">{{- end }}
 	{{- with .Site.Params.script }}<script defer src="/{{ . }}"></script>{{- end }}
-	{{- with .OutputFormats.Get "RSS" -}}
-		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{- with .OutputFormats.Get "RSS" }}
+	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
 
 	{{- with .Site.Params.analytics }}
