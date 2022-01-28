@@ -1,7 +1,80 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Blabel</title><link>https://blabel.dev/projects/</link><description>Recent content in Projects on Blabel</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 18 May 2020 13:50:48 -0500</lastBuildDate><atom:link href="https://blabel.dev/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Cover Creator</title><link>https://blabel.dev/projects/spotify-cover-generator/</link><pubDate>Tue, 14 Dec 2021 12:15:42 -0500</pubDate><guid>https://blabel.dev/projects/spotify-cover-generator/</guid><description>This project originally started for one of the last classes I completed senior year, CS 411 Software Engineering. The class mostly focused on going over Agile practices, Git skills, and coding real projects: all the things that Software Engineers do at work that might not be taught in class.
-Because I was already very familiar with a lot of those skills with my internship, I used the class and the project to polish them further and help my team learn a lot during the project.</description></item><item><title>WTBU App</title><link>https://blabel.dev/projects/wtbu-app/</link><pubDate>Wed, 27 Nov 2019 12:17:30 -0500</pubDate><guid>https://blabel.dev/projects/wtbu-app/</guid><description>This is the first app I&amp;rsquo;ve taken from development to a full release on the app store all by myself! It&amp;rsquo;s on both the Android and iOS app stores.
-This project actually started as an Android-only app I made at McHacks 2019, since I had just started as the webmaster for the college radio station and wanted to make an app for it. I was able to release it on the store during that hackathon&amp;ndash;although it didn&amp;rsquo;t get up on Google&amp;rsquo;s servers till the next day.</description></item><item><title>Snapshots</title><link>https://blabel.dev/projects/snapshots/</link><pubDate>Fri, 02 Aug 2019 02:15:07 -0400</pubDate><guid>https://blabel.dev/projects/snapshots/</guid><description>Throughout my internship at Dow Jones, I worked on a team with Barron&amp;rsquo;s engineers on their live website. This was my first time getting a taste of production-ready software, with multiple servers, staging and testing sites, and a really defined smooth Agile workflow.
-I made edits to their frontend end backend, and also got to make a project all by myself that would solve an issue they were having: they weren&amp;rsquo;t really able to look at older versions of their website.</description></item><item><title>Olympus</title><link>https://blabel.dev/projects/olympus/</link><pubDate>Sun, 11 Nov 2018 00:50:18 -0500</pubDate><guid>https://blabel.dev/projects/olympus/</guid><description>Oculus was made duiring BostonHacks 4, with a team of four. We then focused on two main parts, building a robot to travel along a path, and a vr interface that can create the path and send it over a network to the robot.
-I was one of the members who focused on the VR interface. We got an Oculus GO and a Leap Motion for hand tracking, provided by MLH at the event.</description></item><item><title>E-Mission</title><link>https://blabel.dev/projects/e-mission/</link><pubDate>Sun, 04 Nov 2018 00:05:35 -0500</pubDate><guid>https://blabel.dev/projects/e-mission/</guid><description>I made E-Mission at WHACK 2018, the hackathon Wellesley College puts on. It was the first hackathon I went to all by myself&amp;ndash;without knowing anyone else at the event! I had a blast, and in 48 hours I had three more friends and an app I was proud of.
-At team formation I found someone who was looking for a programmer who had worked with Android before, so I joined up with them.</description></item><item><title>That Mixtape</title><link>https://blabel.dev/projects/thatmixtape/</link><pubDate>Thu, 02 Aug 2018 00:06:02 -0500</pubDate><guid>https://blabel.dev/projects/thatmixtape/</guid><description>This was a warm up website made during Hack Chicago 2018, as part of a one-hour workshop. We made sites inside of repl.it, and then demoed them to each other at the end of the workshop. At the time I didn&amp;rsquo;t have a laptop other than my dad&amp;rsquo;s ancient one which I had brought, that crashed when trying to open a text editor. This was probably the smoothest time coding I had during that hackathon, although of course my browser crashed twice over that hour!</description></item><item><title>Magnezone</title><link>https://blabel.dev/projects/magnezone/</link><pubDate>Mon, 23 Apr 2018 00:06:11 -0500</pubDate><guid>https://blabel.dev/projects/magnezone/</guid><description>Magnezone is a bot for Discord, a chat platform targeted at gamers. I made this for some friends in a server I was in, to automate some of the boring stuff and to have a few fun functions for us to play around with. The themeing was after a Pokemon police officer in a spin off game we had all played.
-This was my first experience working with an API, and with hosting something I created in a server with AWS.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Blabel</title>
+    <link>https://blabel.dev/projects/</link>
+    <description>Recent content in Projects on Blabel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 May 2020 13:50:48 -0500</lastBuildDate><atom:link href="https://blabel.dev/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cover Creator</title>
+      <link>https://blabel.dev/projects/spotify-cover-generator/</link>
+      <pubDate>Tue, 14 Dec 2021 12:15:42 -0500</pubDate>
+      
+      <guid>https://blabel.dev/projects/spotify-cover-generator/</guid>
+      <description>This project originally started for one of the last classes I completed senior year, CS 411 Software Engineering. The class mostly focused on going over Agile practices, Git skills, and coding real projects: all the things that Software Engineers do at work that might not be taught in class.
+Because I was already very familiar with a lot of those skills with my internship, I used the class and the project to polish them further and help my team learn a lot during the project.</description>
+    </item>
+    
+    <item>
+      <title>WTBU App</title>
+      <link>https://blabel.dev/projects/wtbu-app/</link>
+      <pubDate>Wed, 27 Nov 2019 12:17:30 -0500</pubDate>
+      
+      <guid>https://blabel.dev/projects/wtbu-app/</guid>
+      <description>This is the first app I&amp;rsquo;ve taken from development to a full release on the app store all by myself! It&amp;rsquo;s on both the Android and iOS app stores.
+This project actually started as an Android-only app I made at McHacks 2019, since I had just started as the webmaster for the college radio station and wanted to make an app for it. I was able to release it on the store during that hackathon&amp;ndash;although it didn&amp;rsquo;t get up on Google&amp;rsquo;s servers till the next day.</description>
+    </item>
+    
+    <item>
+      <title>Snapshots</title>
+      <link>https://blabel.dev/projects/snapshots/</link>
+      <pubDate>Fri, 02 Aug 2019 02:15:07 -0400</pubDate>
+      
+      <guid>https://blabel.dev/projects/snapshots/</guid>
+      <description>Throughout my internship at Dow Jones, I worked on a team with Barron&amp;rsquo;s engineers on their live website. This was my first time getting a taste of production-ready software, with multiple servers, staging and testing sites, and a really defined smooth Agile workflow.
+I made edits to their frontend end backend, and also got to make a project all by myself that would solve an issue they were having: they weren&amp;rsquo;t really able to look at older versions of their website.</description>
+    </item>
+    
+    <item>
+      <title>Olympus</title>
+      <link>https://blabel.dev/projects/olympus/</link>
+      <pubDate>Sun, 11 Nov 2018 00:50:18 -0500</pubDate>
+      
+      <guid>https://blabel.dev/projects/olympus/</guid>
+      <description>Oculus was made duiring BostonHacks 4, with a team of four. We then focused on two main parts, building a robot to travel along a path, and a vr interface that can create the path and send it over a network to the robot.
+I was one of the members who focused on the VR interface. We got an Oculus GO and a Leap Motion for hand tracking, provided by MLH at the event.</description>
+    </item>
+    
+    <item>
+      <title>E-Mission</title>
+      <link>https://blabel.dev/projects/e-mission/</link>
+      <pubDate>Sun, 04 Nov 2018 00:05:35 -0500</pubDate>
+      
+      <guid>https://blabel.dev/projects/e-mission/</guid>
+      <description>I made E-Mission at WHACK 2018, the hackathon Wellesley College puts on. It was the first hackathon I went to all by myself&amp;ndash;without knowing anyone else at the event! I had a blast, and in 48 hours I had three more friends and an app I was proud of.
+At team formation I found someone who was looking for a programmer who had worked with Android before, so I joined up with them.</description>
+    </item>
+    
+    <item>
+      <title>That Mixtape</title>
+      <link>https://blabel.dev/projects/thatmixtape/</link>
+      <pubDate>Thu, 02 Aug 2018 00:06:02 -0500</pubDate>
+      
+      <guid>https://blabel.dev/projects/thatmixtape/</guid>
+      <description>This was a warm up website made during Hack Chicago 2018, as part of a one-hour workshop. We made sites inside of repl.it, and then demoed them to each other at the end of the workshop. At the time I didn&amp;rsquo;t have a laptop other than my dad&amp;rsquo;s ancient one which I had brought, that crashed when trying to open a text editor. This was probably the smoothest time coding I had during that hackathon, although of course my browser crashed twice over that hour!</description>
+    </item>
+    
+    <item>
+      <title>Magnezone</title>
+      <link>https://blabel.dev/projects/magnezone/</link>
+      <pubDate>Mon, 23 Apr 2018 00:06:11 -0500</pubDate>
+      
+      <guid>https://blabel.dev/projects/magnezone/</guid>
+      <description>Magnezone is a bot for Discord, a chat platform targeted at gamers. I made this for some friends in a server I was in, to automate some of the boring stuff and to have a few fun functions for us to play around with. The themeing was after a Pokemon police officer in a spin off game we had all played.
+This was my first experience working with an API, and with hosting something I created in a server with AWS.</description>
+    </item>
+    
+  </channel>
+</rss>
