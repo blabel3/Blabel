@@ -28,10 +28,11 @@
 
 	<main class="main-card--hero">
 
+		{{- $headshot := resources.Get (print "images/" "headshot.jpg") -}}
 		<picture>
-			<source srcset="/img/headshot.webp" type="image/webp">
-			<img class="headshot" src="/img/headshot.jpg" alt="headshot">
-		</picture>		  
+			<source srcset="{{ ($headshot.Resize "150x webp picture").RelPermalink }}" type="image/webp">
+			<img class="headshot" src="{{ ($headshot.Resize "150x").RelPermalink }}" alt="headshot">
+		</picture>	  
 				
 		<h1>Projects</h1>
 
@@ -39,10 +40,16 @@
 
 		<button class="button--resume">
 			<a href="https://github.com/blabel3/Resume/raw/master/resume.pdf">
-				<i class="fas fa-file-download"></i>
+				{{ partial "fontawesome.html" "download" }}
 				Download My Resume
 			</a>
 		</button>
+
+		{{ with .Resources.ByType "image" }}
+		{{ range . }}
+		{{ .RelPermalink }}
+		{{ end }}
+		{{ end }}
 
 		<section class="projects-container">
 		{{ range (where .Site.RegularPages "Section" "projects") }}
@@ -52,7 +59,7 @@
 				<h2 class="project-text__title text-center"><a class="project-text__link" href="{{ .Permalink}}">{{ .Title }}</a></h2>
 				<h3 class="text-center">View the 
 					<a href="{{ .Params.repo }}" class="project-text__link">
-						<i aria-hidden="true" class="fab fa-github project-text__code-icon"></i>Code
+						Code {{ partial "fontawesome.html" "github" }}
 				</a></h3>
 				<p>{{ .Description }}</p>
 			</div>

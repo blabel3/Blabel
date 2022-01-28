@@ -6,6 +6,5 @@ title = "Blabel"
     author = "Blake Abel"
     description = "Blake Abel (Blabel!)'s online home base."
     
-    stylesheet = "styles.css"
     #script = "app.js" (No script currently in the site)
     analytics = true

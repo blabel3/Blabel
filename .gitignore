@@ -4,6 +4,8 @@
 # Dependency directory
 node_modules
 .cache/
+.parcel-cache/
+.hugo_build.lock
 
 # OS metadata
 .DS_Store

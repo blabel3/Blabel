@@ -1,4 +1,4 @@
-{{- $fname:=print "fa-icons/" (.Get 0) ".svg" -}}
+{{- $fname:=print "fa-icons/" . ".svg" -}}
 {{ $icon := (resources.Get $fname).Content }}
 {{- $path:="<path" -}}
 {{- $fill:="<path fill=\"currentColor\"" -}}
